@@ -46,7 +46,7 @@
 }
 
 .ui.button.exit-tutorial-btn {
-    &:extend(.ui.blue.button all);
+    &:extend(.ui.inverted.button all);
 }
 
 #filelist, #editortools {
@@ -65,6 +65,16 @@
         &:first-child .button.approve {
             background-color: lighten(@primaryColor, 10%);
         }
+    }
+
+    .detailview .actions .card-action .button.approve {
+        background-color: @mainMenuTutorialBackground;
+    }
+
+
+    .tutorial-progress.orange {
+        background-color: @mainMenuTutorialBackground !important;
+        border-color: @mainMenuTutorialBackground !important;
     }
 }
 
@@ -106,15 +116,15 @@
             justify-content: center;
             display: flex;
             padding: 1rem;
-    
+
             img {
-                height:100px;            
+                height:100px;
             }
         }
     }
     .instructions {
         img {
-            margin-bottom:1rem;            
+            margin-bottom:1rem;
         }
     }
 }
