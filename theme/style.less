@@ -57,22 +57,32 @@
     background: transparent !important;
 }
 
-.ui.home {
+#homescreen .ui.home {
     .getting-started-segment {
         background-position: 50% 25%;
     }
-    .detailview .actions .card-action {
-        &:first-child .button.approve {
-            background-color: lighten(@primaryColor, 10%);
-        }
-    }
 
     .detailview .actions .card-action .button.approve {
-        background-color: @mainMenuTutorialBackground !important;
+        background-color: @mainMenuTutorialBackground;
     }
     .tutorial-progress.orange {
         background-color: @mainMenuTutorialBackground !important;
         border-color: @mainMenuTutorialBackground !important;
+    }
+}
+
+.hc #homescreen .ui.home .tutorial-progress.orange {
+    border-color: @HCtextColor !important;
+    background-color: @HCbackground !important;
+    color: @HCtextColor !important;
+}
+
+#tutorialcard {
+    .ui.button.orange.right.attached {
+        background-color: @mainMenuTutorialBackground;
+        &:focus, &:hover {
+            background-color: darken(@mainMenuTutorialBackground, 20%)
+        }
     }
 }
 
