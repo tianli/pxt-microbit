@@ -62,19 +62,20 @@
         background-position: 50% 25%;
     }
 
-    .detailview .actions .card-action .button.approve {
-        background-color: @mainMenuTutorialBackground;
+    .detailview .actions .card-action {
+        .button.approve {
+            background-color: @mainMenuTutorialBackground;
+        }
+
+        &:first-child .button.approve {
+            background-color: @green;
+        }
+
     }
     .tutorial-progress.orange {
         background-color: @mainMenuTutorialBackground !important;
         border-color: @mainMenuTutorialBackground !important;
     }
-}
-
-.hc #homescreen .ui.home .tutorial-progress.orange {
-    border-color: @HCtextColor !important;
-    background-color: @HCbackground !important;
-    color: @HCtextColor !important;
 }
 
 #tutorialcard {
