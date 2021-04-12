@@ -76,7 +76,7 @@ Tutorials, lessons, and mini-courses about programming and computing.
 }, {
   "name": "CodeJoy Remote Robotics",
   "description": "Interactive remote robotics and& coding classes for students and educators",
-  "url": "http://www.codejoyeducation.com",
+  "url": "https://www.codejoyeducation.com",
   "imageUrl": "/static/courses/codejoy.png"
 }]
 ```
