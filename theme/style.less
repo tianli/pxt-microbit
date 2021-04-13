@@ -82,6 +82,18 @@
     }
 }
 
+#root:not(.hc) .tutorial-menu {
+    .ui.circular.label.selected {
+        background-color: @purple !important;
+        color: #e8e8e8 !important;
+        border: 1px solid #e8e8e8 !important;
+
+        &:focus, &:hover {
+            background-color: darken(@purple, 20%) !important;
+        }
+    }
+}
+
 /* Mobile */
 @media only screen and (max-width: @largestMobileScreen) {
     #filelist {
